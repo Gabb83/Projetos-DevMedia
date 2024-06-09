@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0 auto;
+    font-family: 'Opens Sans', 'Segoe UI';
+}
+body{
+    background-color: rgb(238, 240, 255);
+}
+header{
+    background: linear-gradient(120deg, red, blue);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+.parte1{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.figura{
+    text-align: center;
+}
+img{
+    border-radius: 10px;
+}
+.principal{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 6rem;
+    text-align: justify;
+}
+.box{
+    background-color: rgb(223, 227, 255);
+    border-radius: 10px;
+}
+h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.compras{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 20rem;
+    background-color:rgb(152, 163, 255);
+    text-align: center;
+    border-radius: 8px;
+}
+footer{
+    background: linear-gradient(45deg, red, blue);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
