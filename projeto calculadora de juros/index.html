@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
         <title>Calculadora de Juros</title>
     </head>
     <body>
@@ -13,13 +14,13 @@
         <main>
             <section class="calculadora">
                 <h2 class="tituloCalculadora">Calculadora</h2>
-                <form action="index.php" method="post">
+                <form>
                     <div class="opcoes">
-                        <div class="opcaoJuros">
+                        <div class="opcaoJurosx">
                             <label for="opcaoJuros">Informe a Categoria de Juros: </label>
-                            <select id="opcaoJuros">
-                                <option>Juros Simples</option>
-                                <option>Juros Compostos</option>
+                            <select id="opcaoJuros" onchange="opcaoJuros()">
+                                <option value="opcaoJurosSimples">Juros Simples</option>
+                                <option value="opcaoJurosCompostos">Juros Compostos</option>
                             </select>
                         </div>
                         <div class="opcaoTempo">
@@ -50,8 +51,46 @@
                         <button class="diminuiValor">-</button>
                     </div>
                     <div class="buttons">
-                        <button id="enviar">Enviar</button>
-                        <button id="resetar">Resetar</button>
+                        <button type="button" id="enviar" onclick="opcaoJuros()">Enviar</button>
+                        <button type="reset" id="resetar">Resetar</button>
+                    </div>
+                    <div class="areaTabela">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Evento</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Valor Inicial</th>
+                                </tr>
+                                <tr>
+                                    <th>Juros</th>
+                                </tr>
+                                <tr>
+                                    <th>Montante</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Valores</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th id="mostraCapital">R$ 0000,00</th>
+                                </tr>
+                                <tr>
+                                    <th id="mostraJuros">R$ 0000,00</th>
+                                </tr>
+                                <tr>
+                                    <th id="mostraMontante">R$ 0000,00</th>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </form>
             </section>
