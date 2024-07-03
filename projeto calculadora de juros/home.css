@@ -1,13 +1,15 @@
 html{
+    font-family: system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background-color: rgb(8 47 73);
     height: 50vh;
 }
 
 body{
-    background-color: rgb(8 47 73);
+    background: linear-gradient(to right, rgb(8 47 73), rgb(36, 88, 128)) ;
     color:antiquewhite;
     margin: 0;
 }
+
 
 header{
     padding-top: 1rem;
@@ -44,7 +46,8 @@ a{
 }
 
 h1{
-    background-color: rgb(4, 33, 53);
+    font-size: 30px;
+    background-color: rgb(7, 53, 83);
     padding: 20px;
     border: none;
     border-radius: 50px;
@@ -93,4 +96,9 @@ nav ul li:last-child::before {
 nav a {
     text-decoration: none;
     color:antiquewhite;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    color:rgb(20, 177, 99);
 }

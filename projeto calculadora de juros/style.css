@@ -1,136 +1,25 @@
-*{
-    font-family: system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    
-    margin: 0;
-    color:aliceblue;
-}
-#iconeMenu{
-    width: 40px;
-    display: flex;
-    justify-content: space-around;
-    text-align: right;
-    position: relative;
-    bottom: 35px;
-    left: 0px;
-    cursor: pointer;
-}
-header{
-    padding: 2rem;
-    text-align: center;
-}
 body{
-    background-color: rgb(8 47 73);
-    margin: 0rem 2rem;
+    height: 140vh;
 }
-main{
-    display: flex;
-    background-color: rgb(31, 81, 114);
-    padding: 1rem 1rem 4rem;
-    border-radius: 10px 10px 0px 0px;
-    justify-content: center;
-    align-items: center;
+
+.conteudo{
+    padding: 0px 10px 0px 10px;
+    margin: 0px 1rem;
 }
-section{
-    width: 100rem;
-    margin-inline-start: 0.5rem;
+
+.conteudo h2{
+    text-align: center;  
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
-.calculadora{
-    justify-content: center;
-    align-items: center;
+
+b{
+    font-size: 20px;
+    margin: 3rem 0rem;
 }
+
 p{
-    margin: 15px 15px;
-    line-height: 24px;
+    font-size: 17px;
     text-align: justify;
-}
-h2{
-    margin: 2rem 0rem 1rem;
-}
-.jurosSimple{
-    padding-bottom: 2rem;
-}
-.tituloCalculadora{
-    text-align: center;
-    margin-bottom: 40px;
-}
-.opcoes{
-    display: flex;
-}
-select{
-    border-radius: 5px;
-    color: black;
-    width: 10rem;
-    padding: 2px;
-    margin-top: 7px;
-    background-color: aliceblue;
-}
-option{
-    background-color: rgb(70, 163, 163);
-}
-.inputs{
-    margin: 1rem 0.5rem;
-}
-input{
-    height: 1.3rem;
-    border-radius: 5px;
-    border: none;
-    padding: 4px;
-    width: 15rem;
-    margin: 0.5rem 0rem;
-    color: black;
-}
-.diminuiValor, .aumentaValor{
-    color: black;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    margin-inline-start: 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-.diminuiValor:hover, .aumentaValor:hover{
-    background-color: rgb(212, 216, 215);
-    border: 1px solid rgb(180, 180, 180);
-    transform: scale(1.1);
-}
-.buttons{
-    display: flex;
-    justify-content: space-around;
-}
-button{
-    width: 10rem;
-    height: 1.8rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-#enviar{
-    background-color: rgb(22 163 74);
-    transition: transform 0.8s ease;
-}
-#enviar:hover{
-    background-color: rgb(50, 192, 102);
-    transform: scale(1.1);
-}
-#resetar{
-    background-color: rgb(220 38 38);
-    transition: transform 0.8s ease;
-}
-#resetar:hover{
-    background-color: rgb(238, 72, 72);
-    transform: scale(1.1);
-}
-.areaTabela{
-    border: 1px solid black;
-    margin-top: 3rem;
-    display: flex;
-    justify-content: space-around;
-}
-table{
-    border: 1px solid black;
-    text-align: left;
-}
-thead{
-    text-align: center;
-    line-height: 35px;
+    line-height: 1.5;
 }

@@ -1,0 +1,58 @@
+html{
+    background-color:rgb(8 47 73);
+}
+
+body{
+    font-family: system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    color:antiquewhite;
+    background: linear-gradient(to right, rgb(8 47 73), rgb(26, 82, 119));
+}
+.cabecalho{
+    background-color:rgb(8 47 73);
+    color:antiquewhite;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.menu-lateral{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    background-color: rgb(31, 81, 114);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.menu-lateral a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.menu-lateral a:hover{
+    color:rgb(20, 177, 99);
+}
+#barra-menu{
+    cursor: pointer;
+}
+.botao-fechar{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#principal{
+    padding: 16px;
+    transition: margin-left 0.5s;
+}
+@media screen and(max-height: 450px){
+    .menu-lateral{padding-top: 15px;}
+    .menu-lateral a{font-size: 18px;}
+}
