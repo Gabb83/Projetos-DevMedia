@@ -1,0 +1,71 @@
+.tituloCalculadora{
+    text-align: center;
+}
+
+.inputs{
+    text-align: center;
+}
+
+label{
+    margin-right: 10px;
+}
+
+input{
+    border-radius: 5px;
+    border: none;
+    height: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.aumentaValor, .diminuiValor{
+    height: 1.4rem;
+    width: 2rem;
+    border-radius: 5px;
+    border: none;
+    margin-inline: 0.2rem;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-inline: 5rem;
+    width: 7rem;
+    height: 1.7rem;
+}
+
+.buttons{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#enviar{
+    background-color: green; 
+    color: whitesmoke;
+}
+
+#enviar:hover{
+    background-color: rgba(50, 156, 50, 0.966);
+}
+
+#resetar{
+    background-color: brown;
+    color: whitesmoke;
+}
+
+#resetar:hover{
+    background-color: rgb(187, 50, 50);
+}
+
+.areaTabela{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    text-align: justify;
+}
+
+.subtituloTabela{
+    text-align: center;
+    margin-bottom: 5rem;
+}
