@@ -1,13 +1,13 @@
 html{
     font-family: system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background-color: rgb(8 47 73);
-    height: 50vh;
 }
 
 body{
     background: linear-gradient(to right, rgb(8 47 73), rgb(36, 88, 128)) ;
     color:antiquewhite;
     margin: 0;
+    height: 100vh;
 }
 
 

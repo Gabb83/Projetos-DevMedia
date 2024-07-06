@@ -58,14 +58,18 @@ button{
     background-color: rgb(187, 50, 50);
 }
 
+table{
+    margin-inline: 5rem;
+}
+
 .areaTabela{
     display: flex;
-    justify-content: space-around;
-    margin-top: 4rem;
+    justify-content: center;
     text-align: justify;
+    margin-top: 4rem;
 }
 
 .subtituloTabela{
     text-align: center;
-    margin-bottom: 5rem;
+    padding-bottom: 1rem;
 }
