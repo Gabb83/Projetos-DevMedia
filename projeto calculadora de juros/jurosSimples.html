@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/geral.css">
+        <link type="text/css" rel="stylesheet" href="css/jurosSimples.css">
+        <script type="text/javascript" src="js/script.js"></script>
+        <title>Calculadora de Juros</title>
+    </head>
+    <body>        
+        <main>
+            <header class="cabecalho">
+                <h1>Calculadora de Juros</h1>
+            </header>
+            <nav id="menu-lateral" class="menu-lateral">
+                <a href="#" class="botao-fechar" onclick="fecharMenu()">&times;</a>
+                <a href="home.html">Home</a>
+                <a href="jurosSimples.html">Juros Simples</a>
+                <a href="jurosCompostos.html">Juros Compostos</a>
+                <a href="sobre.html">Documentação</a>
+            </nav>
+            <section id="principal">
+                <span id="barra-menu" onclick="abrirMenu()">&#9776</span>
+            </section>
+            <section class="calculadora">
+                <h2 class="tituloCalculadora">Calculadora Juros Simples</h2>
+                <form>
+                    <div class="inputs">
+                        <div>
+                            <label for="capital">Valor Inicial:</label>
+                            <input type="number" id="capital" placeholder="R$ 0,00">
+                            <button class="aumentaValor">+</button>
+                            <button class="diminuiValor">-</button>
+                        </div>
+                        <div>
+                            <label for="taxa">Taxa de Juros:</label>
+                            <input type="number" id="taxa" placeholder="0,00% mês/ano">
+                            <button class="aumentaValor">+</button>
+                            <button class="diminuiValor">-</button>
+                        </div>
+                        <div>
+                            <label for="tempo">Tempo:</label>
+                            <input type="number" id="tempo" placeholder="0 mês/ano">
+                            <button class="aumentaValor">+</button>
+                            <button class="diminuiValor">-</button>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" id="enviar" onclick="calculaJurosSimples()">Enviar</button>
+                        <button type="reset" id="resetar">Resetar</button>
+                    </div>
+                    <div class="areaTabela">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="subtituloTabela">Evento</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Valor Inicial</th>
+                                </tr>
+                                <tr>
+                                    <th>Juros</th>
+                                </tr>
+                                <tr>
+                                    <th>Montante</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="subtituloTabela">Valores</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th id="mostraCapital">R$ 0000,00</th>
+                                </tr>
+                                <tr>
+                                    <th id="mostraJuros">R$ 0000,00</th>
+                                </tr>
+                                <tr>
+                                    <th id="mostraMontante">R$ 0000,00</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </section>
+        <footer>
+        </footer>
+    </body>
+</html>
