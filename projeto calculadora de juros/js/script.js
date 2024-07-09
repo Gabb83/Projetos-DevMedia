@@ -8,6 +8,16 @@ function fecharMenu() {
     document.getElementById("principal").style.marginLeft = "0";
 }
 
+function incrementar(id) {
+    var input = document.getElementById(id);
+    input.value = parseInt(input.value) + 1;
+}
+
+function diminuir(id) {
+    var input = document.getElementById(id);
+    input.value = parseInt(input.value) - 1;
+}
+
 function calculaJurosSimples() {
     var capital = parseFloat(document.getElementById('capital').value);
     var taxa = parseFloat(document.getElementById('taxa').value);

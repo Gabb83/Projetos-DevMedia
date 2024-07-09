@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="geral.css">
-        <link type="text/css" rel="stylesheet" href="jurosSimples.css">
-        <script type="text/javascript" src="script.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/geral.css">
+        <link type="text/css" rel="stylesheet" href="css/jurosSimples.css">
+        <script type="text/javascript" src="js/script.js"></script>
         <title>Calculadora de Juros</title>
     </head>
     <body>        
@@ -30,20 +30,20 @@
                         <div>
                             <label for="capital">Valor Inicial:</label>
                             <input type="number" id="capital" placeholder="R$ 0,00">
-                            <button class="aumentaValor">+</button>
-                            <button class="diminuiValor">-</button>
+                            <button class="aumentaValor" onclick="incrementar('capital')">+</button>
+                            <button class="diminuiValor" onclick="diminuir('capital')">-</button>
                         </div>
                         <div>
                             <label for="taxa">Taxa de Juros:</label>
                             <input type="number" id="taxa" placeholder="0,00% mês/ano">
-                            <button class="aumentaValor">+</button>
-                            <button class="diminuiValor">-</button>
+                            <button class="aumentaValor" onclick="incrementar('taxa')">+</button>
+                            <button class="diminuiValor" onclick="diminuir('taxa')">-</button>
                         </div>
                         <div>
                             <label for="tempo">Tempo:</label>
                             <input type="number" id="tempo" placeholder="0 mês/ano">
-                            <button class="aumentaValor">+</button>
-                            <button class="diminuiValor">-</button>
+                            <button class="aumentaValor" onclick="incrementar('tempo')">+</button>
+                            <button class="diminuiValor" onclick="diminuir('tempo')">-</button>
                         </div>
                     </div>
                     <div class="buttons">
